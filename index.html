@@ -1,31 +1,88 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dmytro Shteflyuk</title>
+    <style type="text/css">
+      :root {
+        --accent-color: #c41d47;
+        --text-color: #445566;
+        --bg-color: #fffef8;
+      }
 
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-	<head>
-		<title>Dmytro Shteflyuk</title>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<style type="text/css">
-			body { text-align: center; font-size: 40px; color: #ddd; font-family: Georgia; line-height: 1.5em;  margin: 0px; }
-			a { color: #ccc; }
-			a:hover { color: #666666; text-decoration: none; }
-			#container { text-align: center; width: 800px; margin: 60px auto 0px auto; }
-			.fn { color: #333333; font-weight: bold; }
-			.title { color: #A0A0A0;}
-			.org a { color: #999999; font-weight: bold; }
-			.url { color: #808080; }
-			.projects { color: #7F7F7F; }
-			.email { color: #7F7F7F; font-weight: bold; }
-			.tel { color: #AEAEAE; }
-		</style>
-	</head>
-	<body>
-		<div id="container" class="vcard">
-			Hello! My name is<br/>
-			<a href="https://kpumuk.info/curriculum-vitae/" class="fn">Dmytro Shteflyuk</a><br />
-			I'm a <span class="title">Ruby <span class="role">Programmer</span></span> at <span class="org vcard"><a href="http://www.workday.com/" class="url fn org">Workday</a></span>.<br />
-			I have a <a href="http://kpumuk.info/" class="url">blog</a> with some writings,<br />
-			and several <a href="https://github.com/kpumuk/" class="projects">Open Source projects</a>.<br />
-			You can reach me at <a href="mailto:hi@dmytro.sh" class="email">hi@dmytro.sh</a></span>.
-		</div>
-	</body>
+      html,
+      body,
+      #container {
+        height: 100%;
+      }
+      body {
+        font-size: 40px;
+        color: var(--text-color);
+        background-color: var(--bg-color);
+        font-family: Georgia;
+        line-height: 1.5em;
+        margin: 0px;
+      }
+      #container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #container .box {
+        max-width: 800px;
+        text-align: center;
+      }
+      .row {
+        margin: 1em 0;
+      }
+
+      a {
+        color: var(--accent-color);
+        text-decoration: underline;
+      }
+      a:hover {
+        text-decoration: underline double;
+        -webkit-text-decoration: underline double;
+      }
+      .fn {
+        font-weight: bold;
+      }
+      .email {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <main id="container" class="vcard">
+      <div class="box">
+        <div class="row">
+          Hello! My name is<br />
+          <a href="https://www.linkedin.com/in/kpumuk/" class="fn"
+            >Dmytro Shteflyuk</a
+          >
+        </div>
+        <div class="row">
+          I'm a <span class="role">Principal Software Engineer</span> at
+          <span class="org vcard"
+            ><a href="https://www.workday.com/" class="url org"
+              >Workday</a
+            ></span
+          >.
+        </div>
+        <div class="row">
+          I have a <a href="https://dmytro.sh/" class="url">blog</a> with some
+          writings<br />
+          and several
+          <a href="https://github.com/kpumuk/" class="projects"
+            >Open Source projects</a
+          >.
+        </div>
+        <div class="row">
+          You can reach me at
+          <a href="mailto:hi@dmytro.sh" class="email">hi@dmytro.sh</a>.
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
